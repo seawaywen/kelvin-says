@@ -1,0 +1,15 @@
+name: kelvin-says
+version: 0.0.11
+summary: What does Kelvin say?
+description: A simple test snap to verify that snap operations work as expected.
+confinement: strict
+grade: stable
+
+apps:
+  kelvin-says:
+    command: kelvin-says.py
+
+parts:
+  kelvin-says:
+    plugin: python
+    source: .
